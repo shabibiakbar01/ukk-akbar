@@ -22,12 +22,12 @@ class Aspirasi extends Model
         return $this->belongsTo(Siswa::class, 'nisn', 'nisn');
     }
 
-    // Relasi ke kategori
+
     public function kategori() {
         return $this->belongsTo(Kategori::class, 'id_kategori', 'id_kategori');
     }
 
-    // Relasi ke feedback
+    
     public function feedback() {
         return $this->hasOne(Feedback::class, 'id_pelaporan', 'id_pelaporan');
     }

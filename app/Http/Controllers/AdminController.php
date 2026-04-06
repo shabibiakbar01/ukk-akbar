@@ -51,7 +51,7 @@ class AdminController extends Controller {
         Feedback::updateOrCreate(
             ['id_pelaporan' => $id],
             [
-                'ket'          => $request->feedback,
+                'pesan'          => $request->feedback,
                 'tgl_feedback' => now(),
                 'id_admin'     => 1,
             ]
